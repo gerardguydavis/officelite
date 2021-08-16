@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Officelite coming soon site</title>
+
+  <title>Officelite | Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body> 
-  A simple solution to complex tasks is coming soon
 
-  Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
-  collaboration platform built with an intuitive interface to improve productivity.
+<body>
+  <div id="hero">
+    <div id="hero-text">
+      <h1>A simple solution to complex tasks is coming soon</h1>
 
-  Get Started
+      <p>Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new
+        collaboration platform built with an intuitive interface to improve productivity.</p>
 
-  Basic
-  Free
-  Up to 5 users for free
-  Basic document collaboration
-  2 gb storage
-  Great security and support
-  Try for Free
+      <button class="get-started">Get Started</button>
+    </div>
+    <div id="hero-images">
+    </div>
+  </div>
 
-  Pro
-  $9.99
-  Per user, billed monthly
-  All essential integrations
-  50 gb storage
-  More control and insights
-  Try for Free
+  <div class="subscription" id="basic">
+    <h2 class="sub-name">Basic</h2>
+    <h1 class="sub-price">Free</h1>
+    Up to 5 users for free
+    <ul class="features">
+      <li>Basic document collaboration</li>
+      <li>2 gb storage</li>
+      <li>Great security and support</li>
+    </ul>
+    <button>Try for Free</button>
+  </div>
 
-  Ultimate
-  $19.99
-  Per user, billed monthly
-  Robust work management
-  100 gb storage
-  VIP support
-  Try for Free
+  <div class="subscription" id="pro">
+    <h2 class="sub-name">Pro</h2>
+    <h1 class="sub-price">$9.99</h1>
+    Per user, billed monthly
+    <ul class="features">
+      <li>All essential integrations</li>
+      <li>50 gb storage</li>
+      <li>More control and insights</li>
+    </ul>
+    <button>Try for Free</button>
+  </div>
+  <div id="subscription-wrapper">
+    <div class="subscription" id="pro">
+      <h2 class="sub-name">Ultimate</h2>
+      <h1 class="sub-price">$19.99</h1>
+      Per user, billed monthly
+      <ul class="features">
+        <li>Robust work management</li>
+        <li>100 gb storage</li>
+        <li>VIP support</li>
+      </ul>
+      <button>Try for Free</button>
+    </div>
+  </div>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-  Get Started
+  <div id="footer-wrap">
+    <div id="countdown">
+      <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+      <h3 id="countdown-date">Coming <span>4 Nov 2020</span></h3>
+      <div id="countdown-clock">
+        <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+        47 Days
+        07 Hours
+        56 Min
+        14 Sec
+      </div>
+    </div>
+    <button class="get-started">Get Started</button>
+  </div>
 </body>
+
 </html>
