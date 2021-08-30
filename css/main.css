@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap");
+#hero .hero-text h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#hero .hero-text h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#hero {
+  background: url("../assets/home/bg-pattern-header.svg") -42px -170px no-repeat;
+  background-size: 458px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+}
+#hero .logo {
+  margin: 40px 0;
+  padding: 0;
+  justify-content: center;
+}
+#hero .logo img {
+  width: 155px;
+}
+#hero .hero-images {
+  margin: 40px 0;
+  padding: 0;
+  justify-content: center;
+}
+#hero .hero-images img {
+  width: 171px;
+}
+#hero .hero-text {
+  width: 327px;
+  text-align: center;
+}
+#hero .hero-text h1 {
+  font-size: 40px;
+  color: #333950;
+  line-height: 48px;
+}
+#hero .hero-text p {
+  color: #757B95;
+  line-height: 26px;
+}
+#hero button {
+  width: 171px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #5175ff;
+  line-height: 28px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 28px;
+  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+}
+
+/*# sourceMappingURL=main.css.map */

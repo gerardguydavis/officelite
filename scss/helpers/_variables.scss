@@ -1,0 +1,20 @@
+$indigo: #5175ff;
+$lightindigo: #829Cff;
+$bluegrey: #333950;
+$darkbluegrey: #25293A;
+$lightbluegrey: #757B95;
+$kindared: #F05B5B;
+$kumbh: 'Kumbh Sans', sans-serif;
+
+%heading {
+    font : {
+        family: $kumbh;
+        weight: 700;
+    }
+}
+
+%center-flex {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}

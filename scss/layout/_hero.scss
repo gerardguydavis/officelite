@@ -1,0 +1,54 @@
+@import '../helpers/variables';
+
+#hero {
+    @extend %center-flex;
+    background: url('../assets/home/bg-pattern-header.svg') -42px -170px no-repeat;
+    background-size: 458px;
+    font : {
+        family: $kumbh;
+        size: 16px;
+    }
+    .logo {
+        margin: 40px 0;
+        padding: 0;
+        justify-content: center;
+        img {
+            width: 155px;
+        }
+    }
+    .hero-images {
+        margin: 40px 0;
+        padding: 0;
+        justify-content: center;
+        img {
+            width: 171px;
+        }
+    }
+
+    .hero-text {
+        width: 327px;
+        text-align: center;
+        h1 {
+            @extend %heading;
+            font-size: 40px;
+            color: $bluegrey;
+            line-height: 48px;
+        }
+        p {
+            color: $lightbluegrey;
+            line-height: 26px;
+        }
+    }
+
+    button {
+        width: 171px;
+        font-weight: 600;
+        color: #fff;
+        background-color: $indigo;
+        line-height: 28px;
+        padding: 14px 0;
+        border: none;
+        border-radius: 28px;
+        box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+    }
+}
