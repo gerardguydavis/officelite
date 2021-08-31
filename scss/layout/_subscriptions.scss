@@ -1,0 +1,107 @@
+@import '../helpers/variables';
+
+#subscriptions {
+    position: absolute;
+    left: 23px;
+    top: 890px;
+}
+
+.subscription {
+    @extend %center-flex;
+    font-family: $kumbh;
+    width: 327px;
+    height: 508px;
+    background: #fff;
+    border-radius: 13px;
+    margin: 16px 0;
+    &:first-of-type {
+        margin-top: 0;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    .sub-name {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin: 0;
+        padding: 40px 0 32px;
+        color: $bluegrey;
+    }
+
+    .sub-price {
+        @extend %heading;
+        flex-grow: 0;
+        width: 100%;
+        font-size: 56px;
+        line-height: 64px;
+        text-align: center;
+        margin: 8px 0;
+        padding: 0;
+        color: $bluegrey;
+    }
+
+    p {
+        color: $bluegrey;
+        line-height: 28px;
+        margin: 0;
+        color: $bluegrey;
+    }
+    .features {
+        justify-content: center;
+        width: 100%;
+        margin: 48px 0 39px;
+        padding: 0;
+        li {
+            list-style: none;
+            text-align: center;
+            line-height: 28px;
+            color: $lightbluegrey;
+            padding: 8px 0;
+            &:first-of-type {
+                padding-top: 0;
+            }
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+        }
+    }
+    button {
+        width: 171px;
+        background-color: rgba(81, 116, 255, 15.26%);
+        color: $indigo;
+        font-size: 16px;
+        line-height: 28px;
+        padding: 14px 0;
+        margin: 0 0 40px;
+        border: none;
+        border-radius: 28px;
+        font : {
+            family: $kumbh;
+            weight: 700;
+        }
+    }
+}
+
+
+.selected {
+    background: url('../assets/home/bg-pattern-pricing.svg'), url('../assets/home/bg-pattern-pricing.svg');
+    background-color: $indigo;
+    background-position: -277px -379px, -230px -170px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 879px;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    .sub-name,
+    .sub-price,
+    p,
+    .features li{
+        color: #fff;
+    }
+    .features li {
+        opacity: .75;
+    }
+    button {
+        background-color: #fff;
+        color: $indigo;
+    }
+}
