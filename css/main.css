@@ -4,10 +4,29 @@
   font-weight: 700;
 }
 
-#footer-wrap, .subscription, #hero {
+.countdown-wrap .countdown #days,
+.countdown-wrap .countdown #hours,
+.countdown-wrap .countdown #minutes,
+.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription, #hero {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.countdown-wrap button, #hero .hero-text button {
+  width: 171px;
+  color: #fff;
+  background-color: #5175ff;
+  line-height: 28px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 28px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.countdown-wrap button:hover, #hero .hero-text button:hover {
+  cursor: pointer;
 }
 
 .subscription .sub-price, #hero .hero-text h1 {
@@ -15,10 +34,29 @@
   font-weight: 700;
 }
 
-#footer-wrap, .subscription, #hero {
+.countdown-wrap .countdown #days,
+.countdown-wrap .countdown #hours,
+.countdown-wrap .countdown #minutes,
+.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription, #hero {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.countdown-wrap button, #hero .hero-text button {
+  width: 171px;
+  color: #fff;
+  background-color: #5175ff;
+  line-height: 28px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 28px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.countdown-wrap button:hover, #hero .hero-text button:hover {
+  cursor: pointer;
 }
 
 #hero {
@@ -55,24 +93,11 @@
   color: #757B95;
   line-height: 26px;
 }
-#hero button {
-  width: 171px;
-  color: #fff;
-  background-color: #5175ff;
-  line-height: 28px;
-  padding: 14px 0;
-  border: none;
-  border-radius: 28px;
+#hero .hero-text button {
   box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
   transition: 0.25s;
 }
-#hero button:hover {
-  cursor: pointer;
-}
-#hero button:active {
+#hero .hero-text button:active {
   margin-top: 15px;
   box-shadow: 0px 5px 10px 0px rgba(23, 51, 154, 0.247159);
   transition: 0.25s;
@@ -83,10 +108,29 @@
   font-weight: 700;
 }
 
-#footer-wrap, .subscription, #hero {
+.countdown-wrap .countdown #days,
+.countdown-wrap .countdown #hours,
+.countdown-wrap .countdown #minutes,
+.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription, #hero {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.countdown-wrap button, #hero .hero-text button {
+  width: 171px;
+  color: #fff;
+  background-color: #5175ff;
+  line-height: 28px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 28px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.countdown-wrap button:hover, #hero .hero-text button:hover {
+  cursor: pointer;
 }
 
 #subscriptions {
@@ -193,10 +237,29 @@
   font-weight: 700;
 }
 
-#footer-wrap, #hero, .subscription {
+.countdown-wrap .countdown #days,
+.countdown-wrap .countdown #hours,
+.countdown-wrap .countdown #minutes,
+.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, #hero, .subscription {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.countdown-wrap button, #hero .hero-text button {
+  width: 171px;
+  color: #fff;
+  background-color: #5175ff;
+  line-height: 28px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 28px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.countdown-wrap button:hover, #hero .hero-text button:hover {
+  cursor: pointer;
 }
 
 footer {
@@ -208,13 +271,75 @@ footer {
 
 #footer-wrap {
   align-items: flex-end;
-  background: url("../assets/home/bg-pattern-footer.svg") center no-repeat;
-  background-size: cover;
+  background: url("../assets/home/bg-pattern-footer.svg"), url("../assets/home/bg-pattern-footer.svg");
+  background-size: 1202px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 128px;
   display: flex;
   width: 100%;
   height: 100%;
 }
 
+.countdown-wrap {
+  width: 328px;
+  margin: 50px 0 130px;
+}
+.countdown-wrap .countdown {
+  margin: 0;
+  padding: 0;
+}
+.countdown-wrap .countdown h3 {
+  line-height: 48px;
+  letter-spacing: 5px;
+  color: #fff;
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.countdown-wrap .countdown h3 span {
+  color: #5175ff;
+}
+.countdown-wrap .countdown #countdown-clock {
+  display: flex;
+  justify-content: space-between;
+  width: 328px;
+  margin: 18px 0 40px;
+}
+.countdown-wrap .countdown #days,
+.countdown-wrap .countdown #hours,
+.countdown-wrap .countdown #minutes,
+.countdown-wrap .countdown #seconds {
+  width: 72px;
+  height: 92px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #333950;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+.countdown-wrap .countdown #days .count,
+.countdown-wrap .countdown #hours .count,
+.countdown-wrap .countdown #minutes .count,
+.countdown-wrap .countdown #seconds .count {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 10px 0 0;
+  width: 100%;
+}
+.countdown-wrap .countdown #days .unit,
+.countdown-wrap .countdown #hours .unit,
+.countdown-wrap .countdown #minutes .unit,
+.countdown-wrap .countdown #seconds .unit {
+  text-transform: lowercase;
+  opacity: 50%;
+  font-size: 12px;
+  margin: 0 0 10px;
+}
 html {
   font-size: 16px;
 }

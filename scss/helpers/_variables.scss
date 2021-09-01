@@ -18,3 +18,21 @@ $kumbh: 'Kumbh Sans', sans-serif;
     justify-content: center;
     flex-flow: row wrap;
 }
+
+%get-started {
+    width: 171px;
+    color: #fff;
+    background-color: $indigo;
+    line-height: 28px;
+    padding: 14px 0;
+    border: none;
+    border-radius: 28px;
+    font : {
+        family: $kumbh;
+        weight: 600;
+        size: 16px;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}

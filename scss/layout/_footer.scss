@@ -10,9 +10,78 @@ footer {
 #footer-wrap {
     @extend %center-flex;
     align-items: flex-end;
-    background: url('../assets/home/bg-pattern-footer.svg') center no-repeat;
-    background-size: cover;
+    background: url('../assets/home/bg-pattern-footer.svg'), url('../assets/home/bg-pattern-footer.svg');
+    background-size: 1202px;
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: 128px;
     display: flex;
     width: 100%;
     height: 100%;
 }
+
+.countdown-wrap {
+    @extend %center-flex;
+    width: 328px;
+    margin: 50px 0 130px;
+    .countdown {
+        margin: 0;
+        padding: 0;
+        h3 {
+            line-height: 48px;
+            letter-spacing: 5px;
+            color: #fff;
+            margin: 0;
+            font : {
+                family: $kumbh;
+                size: 16px;
+                weight: 700;
+            }
+            text : {
+                transform: uppercase;
+                align: center;
+            }
+            span {
+                color: $indigo;
+            }
+        }
+        #countdown-clock {
+            display: flex;
+            justify-content: space-between;
+            width: 328px;
+            margin: 18px 0 40px;
+        }
+        #days,
+        #hours,
+        #minutes,
+        #seconds {
+            @extend %center-flex;
+            width: 72px;
+            height: 92px;
+            font-family: $kumbh;
+            background-color: $bluegrey;
+            border-radius: 4px;
+            color: #fff;
+            text-align: center;
+            .count {
+                font : {
+                    size: 32px;
+                    weight: 700;
+                }
+                line-height: 48px;
+                margin: 10px 0 0;
+                width: 100%;
+            }
+            .unit {
+                text-transform: lowercase;
+                opacity: 50%;
+                font-size: 12px;
+                margin: 0 0 10px;
+            }
+        }
+    }
+    button {
+        @extend %get-started;
+    }
+}
+

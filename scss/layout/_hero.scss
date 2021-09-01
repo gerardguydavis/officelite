@@ -35,30 +35,16 @@
             color: $lightbluegrey;
             line-height: 26px;
         }
-    }
-
-    button {
-        width: 171px;
-        color: #fff;
-        background-color: $indigo;
-        line-height: 28px;
-        padding: 14px 0;
-        border: none;
-        border-radius: 28px;
-        box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
-        font : {
-            family: $kumbh;
-            weight: 600;
-            size: 16px;
-        }
-        &:hover {
-            cursor: pointer;
-        }
-        &:active {
-            margin-top: 15px;
-            box-shadow: 0px 5px 10px 0px rgba(23, 51, 154, 0.247159);
+        button {
+            @extend %get-started;
+            box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+            &:active {
+                margin-top: 15px;
+                box-shadow: 0px 5px 10px 0px rgba(23, 51, 154, 0.247159);
+                transition: .25s;
+            }
             transition: .25s;
         }
-        transition: .25s;
     }
+
 }
