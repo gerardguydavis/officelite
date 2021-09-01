@@ -1,14 +1,17 @@
 @import '../helpers/variables';
 
 #hero {
-    @extend %center-flex;
-    background: url('../assets/home/bg-pattern-header.svg') -42px -170px no-repeat;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: url('../assets/home/bg-pattern-header.svg') center -170px no-repeat;
     background-size: 458px;
     .logo {
         margin: 40px 0;
         padding: 0;
         justify-content: center;
         img {
+            justify-self: center;;
             width: 155px;
         }
     }

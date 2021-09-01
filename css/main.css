@@ -7,7 +7,7 @@
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription, #hero {
+.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -37,7 +37,7 @@
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription, #hero {
+.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -60,7 +60,10 @@
 }
 
 #hero {
-  background: url("../assets/home/bg-pattern-header.svg") -42px -170px no-repeat;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: url("../assets/home/bg-pattern-header.svg") center -170px no-repeat;
   background-size: 458px;
 }
 #hero .logo {
@@ -69,6 +72,7 @@
   justify-content: center;
 }
 #hero .logo img {
+  justify-self: center;
   width: 155px;
 }
 #hero .hero-images {
@@ -111,7 +115,7 @@
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription, #hero {
+.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -135,7 +139,8 @@
 
 #subscriptions {
   position: absolute;
-  left: 23px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 890px;
 }
 
@@ -240,7 +245,7 @@
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, #hero, .subscription {
+.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
