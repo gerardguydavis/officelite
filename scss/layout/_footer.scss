@@ -7,7 +7,7 @@ footer {
     align-items: flex-end;
 }
 
-#footer-wrap {
+.footer-wrap {
     @extend %center-flex;
     align-items: flex-end;
     background: url('../assets/home/bg-pattern-footer.svg'), url('../assets/home/bg-pattern-footer.svg');

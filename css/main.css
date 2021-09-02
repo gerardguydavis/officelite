@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;&display=swap");
-.subscription .sub-price, #hero .hero-text h1 {
+.subscription .sub-price, .hero .hero-text h1 {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
@@ -7,13 +7,13 @@
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription {
+.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap, .subscription {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, #hero .hero-text button {
+.countdown-wrap button, .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -25,11 +25,11 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, #hero .hero-text button:hover {
+.countdown-wrap button:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
-.subscription .sub-price, #hero .hero-text h1 {
+.subscription .sub-price, .hero .hero-text h1 {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
@@ -37,13 +37,13 @@
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription {
+.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap, .subscription {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, #hero .hero-text button {
+.countdown-wrap button, .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -55,59 +55,63 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, #hero .hero-text button:hover {
+.countdown-wrap button:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
-#hero {
+.hero {
   display: flex;
   flex-flow: column;
   align-items: center;
-  background: url("../assets/home/bg-pattern-header.svg") center -170px no-repeat;
+  background: url("../assets/home/bg-pattern-header.svg"), url("../assets/home/bg-pattern-header.svg");
+  background-position-x: center;
+  background-position-y: -170px;
+  background-repeat: no-repeat;
   background-size: 458px;
 }
-#hero .logo {
+.hero .logo {
   margin: 40px 0;
   padding: 0;
   justify-content: center;
 }
-#hero .logo img {
+.hero .logo img {
   justify-self: center;
   width: 155px;
 }
-#hero .hero-images {
+.hero .hero-images {
   margin: 40px 0;
   padding: 0;
   justify-content: center;
 }
-#hero .hero-images img {
+.hero .hero-images img {
   width: 171px;
 }
-#hero .hero-text {
+.hero .hero-text {
   width: 327px;
   text-align: center;
 }
-#hero .hero-text h1 {
+.hero .hero-text h1 {
   font-size: 40px;
   color: #333950;
   line-height: 48px;
 }
-#hero .hero-text p {
+.hero .hero-text p {
   font-family: "Kumbh Sans", sans-serif;
   color: #757B95;
   line-height: 26px;
+  margin-bottom: 24px;
 }
-#hero .hero-text button {
+.hero .hero-text button {
   box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
   transition: 0.25s;
 }
-#hero .hero-text button:active {
+.hero .hero-text button:active {
   margin-top: 15px;
   box-shadow: 0px 5px 10px 0px rgba(23, 51, 154, 0.247159);
   transition: 0.25s;
 }
 
-.subscription .sub-price, #hero .hero-text h1 {
+.subscription .sub-price, .hero .hero-text h1 {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
@@ -115,13 +119,13 @@
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription {
+.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap, .subscription {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, #hero .hero-text button {
+.countdown-wrap button, .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -133,7 +137,7 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, #hero .hero-text button:hover {
+.countdown-wrap button:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
@@ -214,30 +218,38 @@
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
-
-.selected {
+.subscription:hover {
   background: url("../assets/home/bg-pattern-pricing.svg"), url("../assets/home/bg-pattern-pricing.svg");
   background-color: #5175ff;
   background-position: -277px -379px, -230px -170px;
   background-repeat: no-repeat, no-repeat;
   background-size: 879px;
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  transition: 0.2s;
 }
-.selected .sub-name,
-.selected .sub-price,
-.selected p,
-.selected .features li {
+.subscription:hover .sub-name,
+.subscription:hover .sub-price,
+.subscription:hover p,
+.subscription:hover .features li {
   color: #fff;
 }
-.selected .features li {
+.subscription:hover .features li {
   opacity: 0.75;
 }
-.selected button {
+.subscription:hover button {
   background-color: #fff;
   color: #5175ff;
 }
+.subscription:hover button:hover {
+  background-color: #f0f0f0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.subscription:hover button:active {
+  background-color: #e0e0e0;
+}
 
-#hero .hero-text h1, .subscription .sub-price {
+.hero .hero-text h1, .subscription .sub-price {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
@@ -245,13 +257,13 @@
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, #footer-wrap, .subscription {
+.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap, .subscription {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, #hero .hero-text button {
+.countdown-wrap button, .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -263,7 +275,7 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, #hero .hero-text button:hover {
+.countdown-wrap button:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
@@ -274,7 +286,7 @@ footer {
   align-items: flex-end;
 }
 
-#footer-wrap {
+.footer-wrap {
   align-items: flex-end;
   background: url("../assets/home/bg-pattern-footer.svg"), url("../assets/home/bg-pattern-footer.svg");
   background-size: 1202px;

@@ -1,10 +1,13 @@
 @import '../helpers/variables';
 
-#hero {
+.hero {
     display: flex;
     flex-flow: column;
     align-items: center;
-    background: url('../assets/home/bg-pattern-header.svg') center -170px no-repeat;
+    background: url('../assets/home/bg-pattern-header.svg'), url('../assets/home/bg-pattern-header.svg');
+    background-position-x: center;
+    background-position-y: -170px;
+    background-repeat: no-repeat;
     background-size: 458px;
     .logo {
         margin: 40px 0;
@@ -37,6 +40,7 @@
             font-family: $kumbh;
             color: $lightbluegrey;
             line-height: 26px;
+            margin-bottom: 24px;
         }
         button {
             @extend %get-started;
