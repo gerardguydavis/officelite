@@ -1,0 +1,72 @@
+#signup { 
+    display: flex;
+    flex-flow: column;
+    height: 916px;
+    align-items: center;
+    .countdown-wrap {
+        margin: 0;
+        #countdown-date {
+            color: #000;
+        }
+        #countdown-clock {
+            #days,
+            #hours,
+            #minutes,
+            #seconds {
+                background-color: rgba(81, 117, 255, .1);
+                color: $indigo;
+                .unit {
+                    color: $bluegrey;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .hero {
+        width: 100%;
+    }
+}
+
+form {
+    position: absolute;
+    z-index: 10;
+    width: 279px;
+    padding: 24px;
+    top: 684px;
+    background-color: #fff;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+    input {
+        border : {
+            top: none;
+            left: none;
+            right: none;
+            bottom: solid 1px $lightbluegrey;
+        }
+        width: 247px;
+        height: 29px;
+        margin-bottom: 24px;
+        color: $lightbluegrey;
+        padding: 0 16px 16px;
+        font : {
+            family: $kumbh;
+            size: 16px;
+        }
+        &[type="submit"] {
+            @extend %get-started;
+            width: 100%;
+            height: initial;
+        }
+    }
+    select {
+        border: none;
+        width: 247px;
+        margin-bottom: 24px;
+    }
+}
+
+#footer-signup {
+    background-position-y: 478px;
+    transform: rotate(180deg);
+    z-index: 0;
+}

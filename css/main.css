@@ -13,7 +13,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, .hero .hero-text button {
+form input[type=submit], .countdown-wrap button, .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -25,7 +25,7 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, .hero .hero-text button:hover {
+form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
@@ -43,7 +43,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, .hero .hero-text button {
+form input[type=submit], .countdown-wrap button, .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -55,7 +55,7 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, .hero .hero-text button:hover {
+form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
@@ -125,7 +125,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, .hero .hero-text button {
+form input[type=submit], .countdown-wrap button, .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -137,7 +137,7 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, .hero .hero-text button:hover {
+form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
@@ -263,7 +263,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, .hero .hero-text button {
+form input[type=submit], .countdown-wrap button, .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -275,7 +275,7 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, .hero .hero-text button:hover {
+form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
@@ -357,6 +357,75 @@ footer {
   font-size: 12px;
   margin: 0 0 10px;
 }
+#signup {
+  display: flex;
+  flex-flow: column;
+  height: 916px;
+  align-items: center;
+}
+#signup .countdown-wrap {
+  margin: 0;
+}
+#signup .countdown-wrap #countdown-date {
+  color: #000;
+}
+#signup .countdown-wrap #countdown-clock #days,
+#signup .countdown-wrap #countdown-clock #hours,
+#signup .countdown-wrap #countdown-clock #minutes,
+#signup .countdown-wrap #countdown-clock #seconds {
+  background-color: rgba(81, 117, 255, 0.1);
+  color: #5175ff;
+}
+#signup .countdown-wrap #countdown-clock #days .unit,
+#signup .countdown-wrap #countdown-clock #hours .unit,
+#signup .countdown-wrap #countdown-clock #minutes .unit,
+#signup .countdown-wrap #countdown-clock #seconds .unit {
+  color: #333950;
+  font-weight: 700;
+}
+#signup .hero {
+  width: 100%;
+}
+
+form {
+  position: absolute;
+  z-index: 10;
+  width: 279px;
+  padding: 24px;
+  top: 684px;
+  background-color: #fff;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+}
+form input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px #757B95;
+  width: 247px;
+  height: 29px;
+  margin-bottom: 24px;
+  color: #757B95;
+  padding: 0 16px 16px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+}
+form input[type=submit] {
+  width: 100%;
+  height: initial;
+}
+form select {
+  border: none;
+  width: 247px;
+  margin-bottom: 24px;
+}
+
+#footer-signup {
+  background-position-y: 478px;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
 html {
   font-size: 16px;
 }
