@@ -280,7 +280,6 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
 }
 
 footer {
-  height: 1248px;
   background: #25293A;
   width: 100%;
   align-items: flex-end;
@@ -296,6 +295,7 @@ footer {
   display: flex;
   width: 100%;
   height: 100%;
+  height: 1248px;
 }
 
 .countdown-wrap {
@@ -421,9 +421,10 @@ form select {
 }
 
 #footer-signup {
-  background-position-y: 478px;
+  background-position-y: -467px;
   transform: rotate(180deg);
   z-index: 0;
+  height: 320px;
 }
 
 html {
