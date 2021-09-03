@@ -47,7 +47,7 @@ form {
         height: 29px;
         margin-bottom: 24px;
         color: $lightbluegrey;
-        padding: 0 16px 16px;
+        padding: 8px 16px;
         font : {
             family: $kumbh;
             size: 16px;
@@ -57,11 +57,42 @@ form {
             width: 100%;
             height: initial;
         }
+        &:focus {
+            outline: none;
+        }
     }
+    
     select {
-        border: none;
+        border : {
+            top: none;
+            left: none;
+            right: none;
+            bottom: solid 1px $lightbluegrey;
+        }
         width: 247px;
-        margin-bottom: 24px;
+        margin : {
+            bottom: 24px;
+            left: 0;
+        }
+        appearance: none;
+        background-color: transparent;
+        padding: 8px 16px;
+        font : {
+            family: $kumbh;
+            size: 16px;
+            weight: 700;
+        }
+        &option {
+            color: $bluegrey;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .select::after {
+        content: url('../assets/sign-up/icon-arrow-down.svg');
+        width: 13px;
+        height: 8px;
     }
 }
 
