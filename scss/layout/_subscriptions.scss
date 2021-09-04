@@ -32,7 +32,6 @@
 
     .sub-price {
         @extend %heading;
-        flex-grow: 0;
         width: 100%;
         font-size: 56px;
         line-height: 64px;
@@ -110,6 +109,36 @@
             &:active {
                 background-color: #e0e0e0;
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .subscription {
+        width: 593px;
+        padding: 48px;
+        .sub-name {
+            width: 100%;
+            justify-content: left;
+            text-align: left;
+        }
+        .sub-price {
+            width: 372px;
+            justify-content:left;
+            text-align: left;
+        }
+        p {
+            width: 372px;
+        }
+        .features {
+            order: 5;
+            width: 221px;
+            li {
+                text-align: left;
+            }
+        }
+        button {
+            order: 4;
         }
     }
 }

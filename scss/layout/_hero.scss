@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: 458px;
     .logo {
-        margin: 40px 0;
+        margin: 46px 0;
         padding: 0;
         justify-content: center;
         img {
@@ -18,12 +18,14 @@
             width: 155px;
         }
     }
-    .hero-images {
-        margin: 40px 0;
-        padding: 0;
+    .illustration-charts {
+        margin: 30px 0;
+        width: 171px;        
+        margin: 0;
         justify-content: center;
         img {
-            width: 171px;
+            width: 100%;
+            margin: 0;
         }
     }
 
@@ -35,6 +37,7 @@
             font-size: 40px;
             color: $bluegrey;
             line-height: 48px;
+            margin-top: 0;
         }
         p {
             font-family: $kumbh;
@@ -54,4 +57,31 @@
         }
     }
 
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        background-size: 666px;
+        background-position-x: 395px;
+        background-position-y: -164px;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 40px;
+        .logo {
+            margin: 32px 0 84px;
+            flex-basis: 100%;
+            order: 1;
+        }
+        .illustration-charts {
+            width: 281px;
+            order: 3;
+            
+        }
+        .hero-text {
+            order: 2;
+            text-align: left;
+            margin: 0 56px 0 0;
+            width: 345px;
+        }
+    }
 }

@@ -70,7 +70,7 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
   background-size: 458px;
 }
 .hero .logo {
-  margin: 40px 0;
+  margin: 46px 0;
   padding: 0;
   justify-content: center;
 }
@@ -78,13 +78,15 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
   justify-self: center;
   width: 155px;
 }
-.hero .hero-images {
-  margin: 40px 0;
-  padding: 0;
+.hero .illustration-charts {
+  margin: 30px 0;
+  width: 171px;
+  margin: 0;
   justify-content: center;
 }
-.hero .hero-images img {
-  width: 171px;
+.hero .illustration-charts img {
+  width: 100%;
+  margin: 0;
 }
 .hero .hero-text {
   width: 327px;
@@ -94,6 +96,7 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
   font-size: 40px;
   color: #333950;
   line-height: 48px;
+  margin-top: 0;
 }
 .hero .hero-text p {
   font-family: "Kumbh Sans", sans-serif;
@@ -111,6 +114,31 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
   transition: 0.25s;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-size: 666px;
+    background-position-x: 395px;
+    background-position-y: -164px;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 40px;
+  }
+  .hero .logo {
+    margin: 32px 0 84px;
+    flex-basis: 100%;
+    order: 1;
+  }
+  .hero .illustration-charts {
+    width: 281px;
+    order: 3;
+  }
+  .hero .hero-text {
+    order: 2;
+    text-align: left;
+    margin: 0 56px 0 0;
+    width: 345px;
+  }
+}
 .subscription .sub-price, .hero .hero-text h1 {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
@@ -171,7 +199,6 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
   color: #333950;
 }
 .subscription .sub-price {
-  flex-grow: 0;
   width: 100%;
   font-size: 56px;
   line-height: 64px;
@@ -249,6 +276,35 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
   background-color: #e0e0e0;
 }
 
+@media only screen and (min-width: 768px) {
+  .subscription {
+    width: 593px;
+    padding: 48px;
+  }
+  .subscription .sub-name {
+    width: 100%;
+    justify-content: left;
+    text-align: left;
+  }
+  .subscription .sub-price {
+    width: 372px;
+    justify-content: left;
+    text-align: left;
+  }
+  .subscription p {
+    width: 372px;
+  }
+  .subscription .features {
+    order: 5;
+    width: 221px;
+  }
+  .subscription .features li {
+    text-align: left;
+  }
+  .subscription button {
+    order: 4;
+  }
+}
 .hero .hero-text h1, .subscription .sub-price {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
