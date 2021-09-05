@@ -8,7 +8,9 @@
 }
 
 .subscription {
-    @extend %center-flex;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
     font-family: $kumbh;
     width: 327px;
     height: 508px;
@@ -114,17 +116,22 @@
 }
 
 @media only screen and (min-width: 768px) {
+    #subscriptions {
+        top: 698px;
+    }
     .subscription {
         width: 593px;
+        height: 214px;
         padding: 48px;
+        justify-content: flex-start;
+        align-items: flex-start;
         .sub-name {
             width: 100%;
-            justify-content: left;
             text-align: left;
+            padding: 0;
         }
         .sub-price {
             width: 372px;
-            justify-content:left;
             text-align: left;
         }
         p {
@@ -133,12 +140,20 @@
         .features {
             order: 5;
             width: 221px;
+            margin: -98px 0 0 0;
+            align-items: flex-start;
             li {
                 text-align: left;
             }
         }
         button {
             order: 4;
+            margin: 24px 201px 0 0;
+            max-height: 56px;
+        }
+        &:hover {
+            background: url('../assets/home/bg-pattern-pricing.svg') $indigo no-repeat -319px -282px;
+            background-size: 880px;
         }
     }
 }

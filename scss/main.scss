@@ -18,3 +18,9 @@ body {
 main {
     height: 1684px;
 }
+
+@media only screen and (min-width: 768px) {
+    main {
+        height: 1196px;
+    }
+}

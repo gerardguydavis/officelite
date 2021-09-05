@@ -7,7 +7,7 @@
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap, .subscription {
+.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -37,7 +37,7 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap, .subscription {
+.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -147,7 +147,7 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap, .subscription {
+.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -177,6 +177,9 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
 }
 
 .subscription {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
   font-family: "Kumbh Sans", sans-serif;
   width: 327px;
   height: 508px;
@@ -277,18 +280,24 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
 }
 
 @media only screen and (min-width: 768px) {
+  #subscriptions {
+    top: 698px;
+  }
+
   .subscription {
     width: 593px;
+    height: 214px;
     padding: 48px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .subscription .sub-name {
     width: 100%;
-    justify-content: left;
     text-align: left;
+    padding: 0;
   }
   .subscription .sub-price {
     width: 372px;
-    justify-content: left;
     text-align: left;
   }
   .subscription p {
@@ -297,12 +306,20 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
   .subscription .features {
     order: 5;
     width: 221px;
+    margin: -98px 0 0 0;
+    align-items: flex-start;
   }
   .subscription .features li {
     text-align: left;
   }
   .subscription button {
     order: 4;
+    margin: 24px 201px 0 0;
+    max-height: 56px;
+  }
+  .subscription:hover {
+    background: url("../assets/home/bg-pattern-pricing.svg") #5175ff no-repeat -319px -282px;
+    background-size: 880px;
   }
 }
 .hero .hero-text h1, .subscription .sub-price {
@@ -313,7 +330,7 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
 .countdown-wrap .countdown #days,
 .countdown-wrap .countdown #hours,
 .countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap, .subscription {
+.countdown-wrap .countdown #seconds, .countdown-wrap, .footer-wrap {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -412,6 +429,11 @@ footer {
   opacity: 50%;
   font-size: 12px;
   margin: 0 0 10px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-wrap {
+    height: 986px;
+  }
 }
 #signup {
   display: flex;
@@ -518,6 +540,12 @@ body {
 
 main {
   height: 1684px;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    height: 1196px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
