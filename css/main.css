@@ -13,7 +13,7 @@
   flex-flow: row wrap;
 }
 
-form input[type=submit], .countdown-wrap button, .hero .hero-text button {
+.countdown-wrap button, form input[type=submit], .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -25,7 +25,7 @@ form input[type=submit], .countdown-wrap button, .hero .hero-text button {
   font-weight: 600;
   font-size: 16px;
 }
-form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text button:hover {
+.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
@@ -43,7 +43,7 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
   flex-flow: row wrap;
 }
 
-form input[type=submit], .countdown-wrap button, .hero .hero-text button {
+.countdown-wrap button, form input[type=submit], .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -55,7 +55,7 @@ form input[type=submit], .countdown-wrap button, .hero .hero-text button {
   font-weight: 600;
   font-size: 16px;
 }
-form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text button:hover {
+.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
@@ -112,6 +112,7 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
   margin-top: 15px;
   box-shadow: 0px 5px 10px 0px rgba(23, 51, 154, 0.247159);
   transition: 0.25s;
+  margin-bottom: -15px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -153,7 +154,7 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
   flex-flow: row wrap;
 }
 
-form input[type=submit], .countdown-wrap button, .hero .hero-text button {
+.countdown-wrap button, form input[type=submit], .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -165,7 +166,7 @@ form input[type=submit], .countdown-wrap button, .hero .hero-text button {
   font-weight: 600;
   font-size: 16px;
 }
-form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text button:hover {
+.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
@@ -290,6 +291,7 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
     padding: 48px;
     justify-content: flex-start;
     align-items: flex-start;
+    margin: 24px 0;
   }
   .subscription .sub-name {
     width: 100%;
@@ -336,7 +338,7 @@ form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text bu
   flex-flow: row wrap;
 }
 
-form input[type=submit], .countdown-wrap button, .hero .hero-text button {
+.countdown-wrap button, form input[type=submit], .hero .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -348,7 +350,7 @@ form input[type=submit], .countdown-wrap button, .hero .hero-text button {
   font-weight: 600;
   font-size: 16px;
 }
-form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-text button:hover {
+.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-text button:hover {
   cursor: pointer;
 }
 
@@ -371,68 +373,11 @@ footer {
   height: 1248px;
 }
 
-.countdown-wrap {
-  width: 328px;
-  margin: 50px 0 130px;
-}
-.countdown-wrap .countdown {
-  margin: 0;
-  padding: 0;
-}
-.countdown-wrap .countdown h3 {
-  line-height: 48px;
-  letter-spacing: 5px;
-  color: #fff;
-  margin: 0;
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
-.countdown-wrap .countdown h3 span {
-  color: #5175ff;
-}
-.countdown-wrap .countdown #countdown-clock {
-  display: flex;
-  justify-content: space-between;
-  width: 328px;
-  margin: 18px 0 40px;
-}
-.countdown-wrap .countdown #days,
-.countdown-wrap .countdown #hours,
-.countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds {
-  width: 72px;
-  height: 92px;
-  font-family: "Kumbh Sans", sans-serif;
-  background-color: #333950;
-  border-radius: 4px;
-  color: #fff;
-  text-align: center;
-}
-.countdown-wrap .countdown #days .count,
-.countdown-wrap .countdown #hours .count,
-.countdown-wrap .countdown #minutes .count,
-.countdown-wrap .countdown #seconds .count {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 48px;
-  margin: 10px 0 0;
-  width: 100%;
-}
-.countdown-wrap .countdown #days .unit,
-.countdown-wrap .countdown #hours .unit,
-.countdown-wrap .countdown #minutes .unit,
-.countdown-wrap .countdown #seconds .unit {
-  text-transform: lowercase;
-  opacity: 50%;
-  font-size: 12px;
-  margin: 0 0 10px;
-}
 @media only screen and (min-width: 768px) {
   .footer-wrap {
     height: 986px;
+    background-size: 1454px;
+    background-position-y: 15px;
   }
 }
 #signup {
@@ -529,6 +474,96 @@ form .select::after {
   height: 320px;
 }
 
+.countdown-wrap {
+  width: 328px;
+  margin: 50px 0 130px;
+}
+.countdown-wrap .countdown {
+  margin: 0;
+  padding: 0;
+}
+.countdown-wrap .countdown h3 {
+  line-height: 48px;
+  letter-spacing: 5px;
+  color: #fff;
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.countdown-wrap .countdown h3 span {
+  color: #5175ff;
+}
+.countdown-wrap .countdown #countdown-clock {
+  display: flex;
+  justify-content: space-between;
+  width: 328px;
+  margin: 18px 0 40px;
+}
+.countdown-wrap .countdown #days,
+.countdown-wrap .countdown #hours,
+.countdown-wrap .countdown #minutes,
+.countdown-wrap .countdown #seconds {
+  width: 72px;
+  height: 92px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #333950;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+.countdown-wrap .countdown #days .count,
+.countdown-wrap .countdown #hours .count,
+.countdown-wrap .countdown #minutes .count,
+.countdown-wrap .countdown #seconds .count {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 10px 0 0;
+  width: 100%;
+}
+.countdown-wrap .countdown #days .unit,
+.countdown-wrap .countdown #hours .unit,
+.countdown-wrap .countdown #minutes .unit,
+.countdown-wrap .countdown #seconds .unit {
+  text-transform: lowercase;
+  opacity: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+@media only screen and (min-width: 768px) {
+  .countdown-wrap {
+    width: 448px;
+    margin: 100px 0 100px;
+  }
+  .countdown-wrap .countdown #countdown-clock {
+    width: 448px;
+  }
+  .countdown-wrap .countdown #days,
+.countdown-wrap .countdown #hours,
+.countdown-wrap .countdown #minutes,
+.countdown-wrap .countdown #seconds {
+    width: 100px;
+    height: 128px;
+    border-radius: 13px;
+  }
+  .countdown-wrap .countdown #days .count,
+.countdown-wrap .countdown #hours .count,
+.countdown-wrap .countdown #minutes .count,
+.countdown-wrap .countdown #seconds .count {
+    font-size: 56px;
+    margin: 30px 0 0;
+  }
+  .countdown-wrap .countdown #days .unit,
+.countdown-wrap .countdown #hours .unit,
+.countdown-wrap .countdown #minutes .unit,
+.countdown-wrap .countdown #seconds .unit {
+    font-size: 16px;
+  }
+}
 html {
   font-size: 16px;
 }

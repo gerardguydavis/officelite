@@ -20,73 +20,10 @@ footer {
     height: 1248px;
 }
 
-.countdown-wrap {
-    @extend %center-flex;
-    width: 328px;
-    margin: 50px 0 130px;
-    .countdown {
-        margin: 0;
-        padding: 0;
-        h3 {
-            line-height: 48px;
-            letter-spacing: 5px;
-            color: #fff;
-            margin: 0;
-            font : {
-                family: $kumbh;
-                size: 16px;
-                weight: 700;
-            }
-            text : {
-                transform: uppercase;
-                align: center;
-            }
-            span {
-                color: $indigo;
-            }
-        }
-        #countdown-clock {
-            display: flex;
-            justify-content: space-between;
-            width: 328px;
-            margin: 18px 0 40px;
-        }
-        #days,
-        #hours,
-        #minutes,
-        #seconds {
-            @extend %center-flex;
-            width: 72px;
-            height: 92px;
-            font-family: $kumbh;
-            background-color: $bluegrey;
-            border-radius: 4px;
-            color: #fff;
-            text-align: center;
-            .count {
-                font : {
-                    size: 32px;
-                    weight: 700;
-                }
-                line-height: 48px;
-                margin: 10px 0 0;
-                width: 100%;
-            }
-            .unit {
-                text-transform: lowercase;
-                opacity: 50%;
-                font-size: 12px;
-                margin: 0 0 10px;
-            }
-        }
-    }
-    button {
-        @extend %get-started;
-    }
-}
-
 @media only screen and (min-width: 768px) {
     .footer-wrap {
         height: 986px;
+        background-size: 1454px;
+        background-position-y: 15px;
     }
 }
