@@ -97,21 +97,28 @@ form {
 }
 
 #footer-signup {
-    background-position-y: -467px;
+    background-position-y: 95px;
     transform: rotate(180deg);
-    z-index: 0;
     height: 320px;
 }
 
 @media only screen and (min-width: 768px) {
+    #signup {
+        height: 986px;
+    }
     #hero-signup {
         background: rgba(255, 255, 255, 0);
-        padding: 40px 0;
-        align-items: flex-start;
-        .hero-text {
-            width: 600px;
-            text-align: center;
-            margin: 0;
+        .hero-wrap {
+            display: flex;
+            justify-content: center;
+            .logo {
+                margin-bottom: 104px;
+            }
+            .hero-text {
+                width: 600px;
+                text-align: center;
+                margin: 0;
+            }
         }
     }
 
@@ -129,7 +136,8 @@ form {
     }
     
     #footer-signup {
-        background-position-y: -540px;
+        background-position-y: 110px;
+        background-size: 1454px;
         height: 380px;
     }
 }
