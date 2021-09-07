@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;&display=swap");
-.subscription .sub-price, .hero .hero-text h1 {
+.subscription .sub-price, .hero .hero-wrap .hero-text h1 {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
@@ -13,7 +13,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, form input[type=submit], .hero .hero-text button {
+.countdown-wrap button, form input[type=submit], .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -25,11 +25,11 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-text button:hover {
+.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
   cursor: pointer;
 }
 
-.subscription .sub-price, .hero .hero-text h1 {
+.subscription .sub-price, .hero .hero-wrap .hero-text h1 {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
@@ -43,7 +43,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, form input[type=submit], .hero .hero-text button {
+.countdown-wrap button, form input[type=submit], .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -55,60 +55,61 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-text button:hover {
+.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
   cursor: pointer;
 }
 
 .hero {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
   background: url("../assets/home/bg-pattern-header.svg"), url("../assets/home/bg-pattern-header.svg");
   background-position-x: center;
   background-position-y: -170px;
   background-repeat: no-repeat;
   background-size: 458px;
+  display: flex;
+  justify-content: center;
 }
-.hero .logo {
+.hero .hero-wrap {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.hero .hero-wrap .logo {
   margin: 46px 0;
   padding: 0;
   justify-content: center;
 }
-.hero .logo img {
-  justify-self: center;
+.hero .hero-wrap .logo img {
   width: 155px;
 }
-.hero .illustration-charts {
+.hero .hero-wrap .illustration-charts {
   margin: 30px 0;
   width: 171px;
-  margin: 0;
   justify-content: center;
 }
-.hero .illustration-charts img {
+.hero .hero-wrap .illustration-charts img {
   width: 100%;
-  margin: 0;
 }
-.hero .hero-text {
+.hero .hero-wrap .hero-text {
   width: 327px;
   text-align: center;
 }
-.hero .hero-text h1 {
+.hero .hero-wrap .hero-text h1 {
   font-size: 40px;
   color: #333950;
   line-height: 48px;
   margin-top: 0;
 }
-.hero .hero-text p {
+.hero .hero-wrap .hero-text p {
   font-family: "Kumbh Sans", sans-serif;
   color: #757B95;
   line-height: 26px;
   margin-bottom: 24px;
 }
-.hero .hero-text button {
+.hero .hero-wrap .hero-text button {
   box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
   transition: 0.25s;
 }
-.hero .hero-text button:active {
+.hero .hero-wrap .hero-text button:active {
   margin-top: 15px;
   box-shadow: 0px 5px 10px 0px rgba(23, 51, 154, 0.247159);
   transition: 0.25s;
@@ -120,27 +121,60 @@
     background-size: 666px;
     background-position-x: 395px;
     background-position-y: -164px;
+  }
+  .hero .hero-wrap {
     flex-flow: row wrap;
-    justify-content: center;
-    padding: 40px;
-  }
-  .hero .logo {
-    margin: 32px 0 84px;
+    justify-content: space-between;
     flex-basis: 682px;
-    order: 1;
+    align-items: flex-start;
   }
-  .hero .illustration-charts {
+  .hero .hero-wrap .logo {
+    margin: 72px 0 114px;
+    order: 1;
+    flex-basis: 100%;
+  }
+  .hero .hero-wrap .illustration-charts {
     width: 281px;
     order: 3;
+    margin: 19px 0 0 0;
   }
-  .hero .hero-text {
+  .hero .hero-wrap .hero-text {
     order: 2;
     text-align: left;
     margin: 0 56px 0 0;
     width: 345px;
   }
 }
-.subscription .sub-price, .hero .hero-text h1 {
+@media only screen and (min-width: 1200px) {
+  .hero {
+    background-size: 1134px;
+    background-position-x: 656px;
+    background-position-y: -419px;
+  }
+  .hero .hero-wrap {
+    flex-basis: 1135px;
+  }
+  .hero .hero-wrap .logo {
+    margin: 81px 0 102px;
+  }
+  .hero .hero-wrap .hero-text {
+    width: 540px;
+    margin: 72px 60px 0 0;
+  }
+  .hero .hero-wrap .hero-text h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .hero .hero-wrap .hero-text p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .hero .hero-wrap .illustration-charts {
+    width: 525px;
+    margin: 0;
+  }
+}
+.subscription .sub-price, .hero .hero-wrap .hero-text h1 {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
@@ -154,7 +188,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, form input[type=submit], .hero .hero-text button {
+.countdown-wrap button, form input[type=submit], .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -166,7 +200,7 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-text button:hover {
+.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
   cursor: pointer;
 }
 
@@ -324,7 +358,7 @@
     background-size: 880px;
   }
 }
-.hero .hero-text h1, .subscription .sub-price {
+.hero .hero-wrap .hero-text h1, .subscription .sub-price {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
@@ -338,7 +372,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, form input[type=submit], .hero .hero-text button {
+.countdown-wrap button, form input[type=submit], .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -350,7 +384,7 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-text button:hover {
+.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
   cursor: pointer;
 }
 

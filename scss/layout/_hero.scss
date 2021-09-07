@@ -1,88 +1,120 @@
 @import '../helpers/variables';
 
 .hero {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
     background: url('../assets/home/bg-pattern-header.svg'), url('../assets/home/bg-pattern-header.svg');
     background-position-x: center;
     background-position-y: -170px;
     background-repeat: no-repeat;
     background-size: 458px;
-    .logo {
-        margin: 46px 0;
-        padding: 0;
-        justify-content: center;
-        img {
-            justify-self: center;;
-            width: 155px;
-        }
-    }
-    .illustration-charts {
-        margin: 30px 0;
-        width: 171px;        
-        margin: 0;
-        justify-content: center;
-        img {
-            width: 100%;
-            margin: 0;
-        }
-    }
-
-    .hero-text {
-        width: 327px;
-        text-align: center;
-        h1 {
-            @extend %heading;
-            font-size: 40px;
-            color: $bluegrey;
-            line-height: 48px;
-            margin-top: 0;
-        }
-        p {
-            font-family: $kumbh;
-            color: $lightbluegrey;
-            line-height: 26px;
-            margin-bottom: 24px;
-        }
-        button {
-            @extend %get-started;
-            box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
-            &:active {
-                margin-top: 15px;
-                box-shadow: 0px 5px 10px 0px rgba(23, 51, 154, 0.247159);
-                transition: .25s;
-                margin-bottom: -15px;
+    display: flex;
+    justify-content: center;
+    .hero-wrap {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        .logo {
+            margin: 46px 0;
+            padding: 0;
+            justify-content: center;
+            img {
+                width: 155px;
             }
-            transition: .25s;
+        }
+        .illustration-charts {
+            margin: 30px 0;
+            width: 171px;
+            justify-content: center;
+            img {
+                width: 100%;
+            }
+        }
+
+        .hero-text {
+            width: 327px;
+            text-align: center;
+            h1 {
+                @extend %heading;
+                font-size: 40px;
+                color: $bluegrey;
+                line-height: 48px;
+                margin-top: 0;
+            }
+            p {
+                font-family: $kumbh;
+                color: $lightbluegrey;
+                line-height: 26px;
+                margin-bottom: 24px;
+            }
+            button {
+                @extend %get-started;
+                box-shadow: $button-shadow;
+                &:active {
+                    margin-top: 15px;
+                    box-shadow: $button-shadow-active;
+                    transition: .25s;
+                    margin-bottom: -15px;
+                }
+                transition: .25s;
+            }
         }
     }
-
-}
+}   
 
 @media only screen and (min-width: 768px) {
     .hero {
         background-size: 666px;
         background-position-x: 395px;
         background-position-y: -164px;
-        flex-flow: row wrap;
-        justify-content: center;
-        padding: 40px;
-        .logo {
-            margin: 32px 0 84px;
+        .hero-wrap {
+            flex-flow: row wrap;
+            justify-content: space-between;
             flex-basis: 682px;
-            order: 1;
+            align-items: flex-start;
+            .logo {
+                margin: 72px 0 114px;
+                order: 1;
+                flex-basis: 100%;
+            }
+            .illustration-charts {
+                width: 281px;
+                order: 3;
+                margin: 19px 0 0 0;
+            }                
+            .hero-text {
+                order: 2;
+                text-align: left;
+                margin: 0 56px 0 0;
+                width: 345px;
+            }
         }
-        .illustration-charts {
-            width: 281px;
-            order: 3;
-            
-        }
-        .hero-text {
-            order: 2;
-            text-align: left;
-            margin: 0 56px 0 0;
-            width: 345px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .hero {
+        background-size: 1134px;
+        background-position-x: 656px;
+        background-position-y: -419px;
+        .hero-wrap {
+            flex-basis: 1135px;
+            .logo {
+                margin: 81px 0 102px;
+            }
+            .hero-text {
+                width: 540px;
+                margin: 72px 60px 0 0;
+                h1 {
+                    font-size: 56px;
+                    line-height: 64px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+            .illustration-charts {
+                width: 525px;
+                margin: 0;
+            }
         }
     }
 }
