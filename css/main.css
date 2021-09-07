@@ -484,33 +484,38 @@ footer {
     background-position-y: -315px;
   }
 }
-#signup {
+.signup-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.info-wrap {
   display: flex;
   flex-flow: column;
   height: 916px;
   align-items: center;
 }
-#signup .countdown-wrap {
+.info-wrap .countdown-wrap {
   margin: 0;
 }
-#signup .countdown-wrap #countdown-date {
+.info-wrap .countdown-wrap #countdown-date {
   color: #000;
 }
-#signup .countdown-wrap #countdown-clock #days,
-#signup .countdown-wrap #countdown-clock #hours,
-#signup .countdown-wrap #countdown-clock #minutes,
-#signup .countdown-wrap #countdown-clock #seconds {
+.info-wrap .countdown-wrap #countdown-clock #days,
+.info-wrap .countdown-wrap #countdown-clock #hours,
+.info-wrap .countdown-wrap #countdown-clock #minutes,
+.info-wrap .countdown-wrap #countdown-clock #seconds {
   background-color: rgba(81, 117, 255, 0.1);
   color: #5175ff;
 }
-#signup .countdown-wrap #countdown-clock #days .unit,
-#signup .countdown-wrap #countdown-clock #hours .unit,
-#signup .countdown-wrap #countdown-clock #minutes .unit,
-#signup .countdown-wrap #countdown-clock #seconds .unit {
+.info-wrap .countdown-wrap #countdown-clock #days .unit,
+.info-wrap .countdown-wrap #countdown-clock #hours .unit,
+.info-wrap .countdown-wrap #countdown-clock #minutes .unit,
+.info-wrap .countdown-wrap #countdown-clock #seconds .unit {
   color: #333950;
   font-weight: 700;
 }
-#signup .hero {
+.info-wrap .hero {
   width: 100%;
 }
 
@@ -571,7 +576,7 @@ form .select::after {
   height: 8px;
 }
 
-#footer-signup {
+#footer-signup-wrap {
   background-position-y: 95px;
   transform: rotate(180deg);
   height: 320px;
@@ -611,10 +616,57 @@ form .select::after {
     height: 45px;
   }
 
-  #footer-signup {
+  #footer-signup-wrap {
     background-position-y: 110px;
     background-size: 1454px;
     height: 380px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #signup {
+    display: flex;
+    justify-content: center;
+    max-height: 750px;
+  }
+
+  .signup-wrap {
+    width: 1110px;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .signup-wrap .info-wrap {
+    width: 540px;
+    align-items: flex-start;
+  }
+  .signup-wrap #hero-signup .hero-wrap {
+    justify-content: flex-start;
+  }
+  .signup-wrap #hero-signup .hero-wrap .logo {
+    margin-bottom: 154px;
+  }
+  .signup-wrap #hero-signup .hero-wrap .hero-text {
+    text-align: left;
+    width: 100%;
+  }
+  .signup-wrap .countdown-wrap {
+    width: 448px;
+  }
+
+  form {
+    position: unset;
+    height: 508px;
+    margin-top: 237px;
+  }
+
+  #footer-signup {
+    background: url("../assets/sign-up/bg-pattern-side.svg") #25293A;
+    background-position: center -781px;
+    position: fixed;
+    height: 100vh;
+    width: 420px;
+    right: 0;
+    top: 0;
   }
 }
 .countdown-wrap {

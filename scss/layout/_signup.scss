@@ -1,4 +1,8 @@
-#signup { 
+.signup-wrap {
+    display: flex;
+    justify-content: center;
+}
+.info-wrap { 
     display: flex;
     flex-flow: column;
     height: 916px;
@@ -96,7 +100,7 @@ form {
     }
 }
 
-#footer-signup {
+#footer-signup-wrap {
     background-position-y: 95px;
     transform: rotate(180deg);
     height: 320px;
@@ -135,9 +139,58 @@ form {
         }
     }
     
-    #footer-signup {
+    #footer-signup-wrap {
         background-position-y: 110px;
         background-size: 1454px;
         height: 380px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #signup {
+        display: flex;
+        justify-content: center;
+        max-height: 750px;
+    }
+    .signup-wrap {
+        width: 1110px;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .info-wrap {
+            width: 540px;
+            align-items: flex-start;
+        }
+        #hero-signup {
+            .hero-wrap {
+                justify-content: flex-start;
+                .logo {
+                    margin-bottom: 154px;
+                }
+                .hero-text {
+                    text-align: left;
+                    width: 100%;
+                }   
+            }
+        }
+        .countdown-wrap {
+            width: 448px;
+        }
+    }
+
+    form {
+        position: unset;
+        height: 508px;
+        margin-top: 237px;
+    }
+
+    #footer-signup {
+        background: url('../assets/sign-up/bg-pattern-side.svg') $darkbluegrey;
+        background-position: center -781px;
+        position: fixed;
+        height: 100vh;
+        width: 420px;
+        right: 0;
+        top: 0;
     }
 }
