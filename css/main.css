@@ -484,6 +484,10 @@ footer {
     background-position-y: -315px;
   }
 }
+#signup {
+  height: 916px;
+}
+
 .signup-wrap {
   display: flex;
   justify-content: center;
@@ -492,8 +496,8 @@ footer {
 .info-wrap {
   display: flex;
   flex-flow: column;
-  height: 916px;
   align-items: center;
+  width: 100%;
 }
 .info-wrap .countdown-wrap {
   margin: 0;

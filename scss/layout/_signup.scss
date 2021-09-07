@@ -1,3 +1,6 @@
+#signup {
+    height: 916px;
+}
 .signup-wrap {
     display: flex;
     justify-content: center;
@@ -5,8 +8,8 @@
 .info-wrap { 
     display: flex;
     flex-flow: column;
-    height: 916px;
     align-items: center;
+    width: 100%;
     .countdown-wrap {
         margin: 0;
         #countdown-date {
