@@ -29,12 +29,15 @@ $button-shadow-active: 0px 5px 10px 0px rgba(23, 51, 154, 0.247159);
     padding: 14px 0;
     border: none;
     border-radius: 28px;
+    transition: .1s;
     font : {
         family: $kumbh;
         weight: 600;
         size: 16px;
     }
     &:hover {
+        background-color: $lightindigo;
+        transition: .1s;
         cursor: pointer;
     }
 }

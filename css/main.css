@@ -21,11 +21,14 @@
   padding: 14px 0;
   border: none;
   border-radius: 28px;
+  transition: 0.1s;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
 .countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
+  background-color: #829Cff;
+  transition: 0.1s;
   cursor: pointer;
 }
 
@@ -51,11 +54,14 @@
   padding: 14px 0;
   border: none;
   border-radius: 28px;
+  transition: 0.1s;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
 .countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
+  background-color: #829Cff;
+  transition: 0.1s;
   cursor: pointer;
 }
 
@@ -197,11 +203,14 @@
   padding: 14px 0;
   border: none;
   border-radius: 28px;
+  transition: 0.1s;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
 .countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
+  background-color: #829Cff;
+  transition: 0.1s;
   cursor: pointer;
 }
 
@@ -305,10 +314,11 @@
 .subscription:hover button {
   background-color: #fff;
   color: #5175ff;
+  transition: 0.1s;
 }
 .subscription:hover button:hover {
-  background-color: #f0f0f0;
-  transition: 0.3s;
+  color: #829Cff;
+  transition: 0.1s;
   cursor: pointer;
 }
 .subscription:hover button:active {
@@ -432,11 +442,14 @@
   padding: 14px 0;
   border: none;
   border-radius: 28px;
+  transition: 0.1s;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
 .countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
+  background-color: #829Cff;
+  transition: 0.1s;
   cursor: pointer;
 }
 
@@ -499,6 +512,9 @@ footer {
   align-items: center;
   width: 100%;
 }
+.info-wrap .hero {
+  width: 100%;
+}
 .info-wrap .countdown-wrap {
   margin: 0;
 }
@@ -518,9 +534,6 @@ footer {
 .info-wrap .countdown-wrap #countdown-clock #seconds .unit {
   color: #333950;
   font-weight: 700;
-}
-.info-wrap .hero {
-  width: 100%;
 }
 
 form {

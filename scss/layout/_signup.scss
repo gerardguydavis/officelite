@@ -10,6 +10,9 @@
     flex-flow: column;
     align-items: center;
     width: 100%;
+    .hero {
+        width: 100%;
+    }
     .countdown-wrap {
         margin: 0;
         #countdown-date {
@@ -28,9 +31,6 @@
                 }
             }
         }
-    }
-    .hero {
-        width: 100%;
     }
 }
 
