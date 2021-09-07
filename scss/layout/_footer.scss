@@ -27,3 +27,12 @@ footer {
         background-position-y: 15px;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .footer-wrap {
+        height: 603px;
+        background-size: 2036px;
+        background-position-x: -703px;
+        background-position-y: -615px;
+    }
+}

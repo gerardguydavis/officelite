@@ -158,3 +158,48 @@
         }
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    #subscriptions {
+        top: 928px;
+        display: flex;
+        flex-flow: row wrap;
+        width: 1110px;
+    }
+    .subscription {
+        width: 350px;
+        height: 428px;
+        padding: 40px 0;
+        justify-content: center;
+        margin: 0 15px;
+        &:first-of-type {
+            margin-left: 0;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+        .sub-name {
+            text-align: center;
+        }
+        .sub-price {
+            width: 100%;
+            text-align: center;
+        }
+        p {
+            width: 100%;
+            text-align: center;
+        }
+        button {
+            margin: 0;
+            order: 5;
+        }
+        .features {
+            margin: 0;
+            align-items: initial;
+            order: 4;
+            li {
+                text-align: center;
+            }
+        }
+    }
+}

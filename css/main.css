@@ -358,6 +358,51 @@
     background-size: 880px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  #subscriptions {
+    top: 928px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 1110px;
+  }
+
+  .subscription {
+    width: 350px;
+    height: 428px;
+    padding: 40px 0;
+    justify-content: center;
+    margin: 0 15px;
+  }
+  .subscription:first-of-type {
+    margin-left: 0;
+  }
+  .subscription:last-of-type {
+    margin-right: 0;
+  }
+  .subscription .sub-name {
+    text-align: center;
+  }
+  .subscription .sub-price {
+    width: 100%;
+    text-align: center;
+  }
+  .subscription p {
+    width: 100%;
+    text-align: center;
+  }
+  .subscription button {
+    margin: 0;
+    order: 5;
+  }
+  .subscription .features {
+    margin: 0;
+    align-items: initial;
+    order: 4;
+  }
+  .subscription .features li {
+    text-align: center;
+  }
+}
 .hero .hero-wrap .hero-text h1, .subscription .sub-price {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
@@ -412,6 +457,14 @@ footer {
     height: 986px;
     background-size: 1454px;
     background-position-y: 15px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer-wrap {
+    height: 603px;
+    background-size: 2036px;
+    background-position-x: -703px;
+    background-position-y: -615px;
   }
 }
 #signup {
