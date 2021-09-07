@@ -14,10 +14,20 @@ footer {
     background-repeat:no-repeat;
     background-position-x: center;
     background-position-y: 128px;
+    background-attachment: fixed;
     display: flex;
-    width: 100%;
-    height: 100%;
     height: 1248px;
+    transition: .5s;
+}
+
+.footer-bg {
+    width: 1202px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -33,6 +43,6 @@ footer {
         height: 603px;
         background-size: 2036px;
         background-position-x: -703px;
-        background-position-y: -615px;
+        background-position-y: -315px;
     }
 }

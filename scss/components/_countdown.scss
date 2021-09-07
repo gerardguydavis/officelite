@@ -1,5 +1,7 @@
 .countdown-wrap {
-    @extend %center-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     width: 328px;
     margin: 50px 0 130px;
     .countdown {
@@ -92,6 +94,27 @@
                     font-size: 16px;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .countdown-wrap {
+        width: 1100px;
+        margin: 317px 0 90px;
+        justify-content: space-between;
+        align-items: center;
+        .countdown {
+            justify-content: flex-start;
+            #countdown-clock {
+                margin-bottom: 0;
+            }
+            h3 {
+                text-align: left;
+            }
+        }
+        button {
+            height: 56px;
         }
     }
 }
