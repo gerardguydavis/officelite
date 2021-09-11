@@ -1,3 +1,5 @@
+//TIMER FUNCTIONS
+
 const daysDisplay = document.getElementById('days');
 const hoursDisplay = document.getElementById('hours');
 const minutesDisplay = document.getElementById('minutes');
@@ -8,6 +10,8 @@ const initial = new Date().getTime();
 
 const initialDistance = deadline - initial;
 
+
+//Set initial countdown clock on page load
 setInitial();
 
 function setInitial() {
@@ -60,6 +64,8 @@ function setInitial() {
             `;
     };
 }
+
+//Run timer
 const runTimer = setInterval(function () {
     let today = new Date().getTime();
     let distance = deadline - today;

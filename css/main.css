@@ -13,7 +13,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, form input[type=submit], .hero .hero-wrap .hero-text button {
+form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -26,10 +26,33 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
+form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
   background-color: #829Cff;
   transition: 0.1s;
   cursor: pointer;
+}
+
+form #plans .plan-option, form #plan-select #plan-selection {
+  color: #333950;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+form #plans .plan-option span, form #plan-select #plan-selection span {
+  opacity: 40%;
+}
+
+.hide {
+  display: none;
+}
+
+.open {
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
+.close {
+  transform: rotate(0deg);
+  transition: 0.2s;
 }
 
 .subscription .sub-price, .hero .hero-wrap .hero-text h1 {
@@ -46,7 +69,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, form input[type=submit], .hero .hero-wrap .hero-text button {
+form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -59,10 +82,33 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
+form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
   background-color: #829Cff;
   transition: 0.1s;
   cursor: pointer;
+}
+
+form #plans .plan-option, form #plan-select #plan-selection {
+  color: #333950;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+form #plans .plan-option span, form #plan-select #plan-selection span {
+  opacity: 40%;
+}
+
+.hide {
+  display: none;
+}
+
+.open {
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
+.close {
+  transform: rotate(0deg);
+  transition: 0.2s;
 }
 
 .hero {
@@ -195,7 +241,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, form input[type=submit], .hero .hero-wrap .hero-text button {
+form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -208,10 +254,33 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
+form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
   background-color: #829Cff;
   transition: 0.1s;
   cursor: pointer;
+}
+
+form #plans .plan-option, form #plan-select #plan-selection {
+  color: #333950;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+form #plans .plan-option span, form #plan-select #plan-selection span {
+  opacity: 40%;
+}
+
+.hide {
+  display: none;
+}
+
+.open {
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
+.close {
+  transform: rotate(0deg);
+  transition: 0.2s;
 }
 
 #subscriptions {
@@ -434,7 +503,7 @@
   flex-flow: row wrap;
 }
 
-.countdown-wrap button, form input[type=submit], .hero .hero-wrap .hero-text button {
+form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -447,10 +516,33 @@
   font-weight: 600;
   font-size: 16px;
 }
-.countdown-wrap button:hover, form input[type=submit]:hover, .hero .hero-wrap .hero-text button:hover {
+form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
   background-color: #829Cff;
   transition: 0.1s;
   cursor: pointer;
+}
+
+form #plans .plan-option, form #plan-select #plan-selection {
+  color: #333950;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+form #plans .plan-option span, form #plan-select #plan-selection span {
+  opacity: 40%;
+}
+
+.hide {
+  display: none;
+}
+
+.open {
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
+.close {
+  transform: rotate(0deg);
+  transition: 0.2s;
 }
 
 footer {
@@ -536,63 +628,6 @@ footer {
   font-weight: 700;
 }
 
-form {
-  position: absolute;
-  z-index: 10;
-  width: 279px;
-  padding: 24px;
-  top: 684px;
-  background-color: #fff;
-  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
-  border-radius: 13px;
-}
-form input {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: solid 1px #757B95;
-  width: 247px;
-  height: 29px;
-  margin-bottom: 24px;
-  color: #757B95;
-  padding: 8px 16px;
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 16px;
-}
-form input[type=submit] {
-  width: 100%;
-  height: initial;
-}
-form input:focus {
-  outline: none;
-}
-form select {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: solid 1px #757B95;
-  width: 247px;
-  margin-bottom: 24px;
-  margin-left: 0;
-  appearance: none;
-  background-color: transparent;
-  padding: 8px 16px;
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-}
-form selectoption {
-  color: #333950;
-}
-form select:focus {
-  outline: none;
-}
-form .select::after {
-  content: url("../assets/sign-up/icon-arrow-down.svg");
-  width: 13px;
-  height: 8px;
-}
-
 #footer-signup-wrap {
   background-position-y: 95px;
   transform: rotate(180deg);
@@ -618,19 +653,6 @@ form .select::after {
     width: 600px;
     text-align: center;
     margin: 0;
-  }
-
-  form {
-    padding: 42px;
-    width: 360px;
-  }
-  form input {
-    width: 327px;
-    height: 45px;
-  }
-  form select {
-    width: 343px;
-    height: 45px;
   }
 
   #footer-signup-wrap {
@@ -668,12 +690,6 @@ form .select::after {
   }
   .signup-wrap .countdown-wrap {
     width: 448px;
-  }
-
-  form {
-    position: unset;
-    height: 508px;
-    margin-top: 237px;
   }
 
   #footer-signup {
@@ -797,6 +813,136 @@ form .select::after {
   }
   .countdown-wrap button {
     height: 56px;
+  }
+}
+form {
+  position: absolute;
+  z-index: 10;
+  width: 279px;
+  padding: 24px;
+  top: 684px;
+  background-color: #fff;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+}
+form input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px #757B95;
+  width: 247px;
+  line-height: 28px;
+  color: #757B95;
+  padding: 17px 16px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+}
+form input[type=submit] {
+  width: 100%;
+  height: initial;
+}
+form input:focus {
+  outline: none;
+}
+form #company-input {
+  margin-bottom: 40px;
+}
+form #plan-select {
+  border-bottom: solid 1px #757B95;
+  padding: 7px 16px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+form #plan-select:hover {
+  cursor: pointer;
+}
+form #plan-select img {
+  width: 13px;
+  height: 8px;
+}
+form #plans {
+  position: absolute;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid rgba(51, 57, 80, 0.153273);
+  box-sizing: border-box;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.747077);
+  border-radius: 8px;
+  width: 279px;
+  padding: 8px 16px 0;
+}
+form #plans .plan-option {
+  padding: 0 0 16px;
+  border-bottom: solid 1px #757B95;
+  line-height: 28px;
+}
+form #plans .plan-option:last-child {
+  padding: 0 0 8px;
+  border: none;
+}
+form #plans .plan-option:hover {
+  cursor: pointer;
+}
+form .invalid input {
+  color: #F05B5B;
+  border-bottom: solid 1px #F05B5B;
+}
+form select {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px #757B95;
+  width: 247px;
+  margin-bottom: 24px;
+  margin-left: 0;
+  appearance: none;
+  background-color: transparent;
+  padding: 8px 16px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+form selectoption {
+  color: #333950;
+}
+form select:focus {
+  outline: none;
+}
+form .select::after {
+  content: url("../assets/sign-up/icon-arrow-down.svg");
+  width: 13px;
+  height: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  form {
+    padding: 42px;
+    width: 360px;
+  }
+  form input {
+    width: 327px;
+    height: 45px;
+  }
+  form #plan-select {
+    width: 327px;
+    height: 45px;
+    padding: 17px 16px;
+  }
+  form #plans {
+    width: 360px;
+    padding: 8px 32px;
+  }
+  form #plans .plan-option {
+    width: 296px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  form {
+    position: unset;
+    height: 508px;
+    margin-top: 237px;
   }
 }
 html {
