@@ -12,6 +12,7 @@ const plans = document.getElementById("plans");
 const basic = document.getElementById("basic-option");
 const pro = document.getElementById("pro-option");
 const ultimate = document.getElementById("ultimate-option");
+const submit = document.getElementById("form-submit");
 const requiredInputs = [nameInput, emailInput, phoneInput];
 
 
@@ -44,16 +45,34 @@ planSelector.addEventListener("click", function () {
 
 basic.addEventListener("click", function () {
     planSelection.innerHTML = "Basic Pack <span>Free</span>";
+    if (pro.classList.contains("selected")) {
+        pro.classList.remove("selected");
+    } if (ultimate.classList.contains("selected")) {
+        ultimate.classList.remove("selected");
+    }
+    basic.classList.add("selected");
     closeDrop();
 });
 
 pro.addEventListener("click", function () {
     planSelection.innerHTML = "Pro Pack <span>$9.99</span>";
+    if (basic.classList.contains("selected")) {
+        basic.classList.remove("selected")
+    } if (ultimate.classList.contains("selected")) {
+        ultimate.classList.remove("selected");
+    }
+    pro.classList.add("selected");
     closeDrop();
 });
 
 ultimate.addEventListener("click", function () {
     planSelection.innerHTML = "Ultimate Pack <span>$19.99</span>";
+    if (basic.classList.contains("selected")) {
+        basic.classList.remove("selected")
+    } if (pro.classList.contains("selected")) {
+        pro.classList.remove("selected");
+    }
+    ultimate.classList.add("selected");
     closeDrop();
 });
 
@@ -62,9 +81,3 @@ document.addEventListener("keydown", function (e) {
         closeDrop();
     }
 })
-
-/*for (let input of requiredInputs) {
-    input.addEventListener('click', function() {
-        if ()
-    })
-}*/

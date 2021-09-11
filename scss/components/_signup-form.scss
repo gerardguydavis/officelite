@@ -1,4 +1,4 @@
-form {
+#signup-form {
     position: absolute;
     z-index: 10;
     width: 279px;
@@ -7,32 +7,39 @@ form {
     background-color: #fff;
     box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
     border-radius: 13px;
-    input {
-        border : {
-            top: none;
-            left: none;
-            right: none;
-            bottom: solid 1px $lightbluegrey;
-        }
-        width: 247px;
-        line-height: 28px;
-        color: $lightbluegrey;
+    .form-line {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
         padding: 17px 16px;
-        font : {
-            family: $kumbh;
-            size: 16px;
+        border-bottom: solid 1px $lightbluegrey;
+            input {
+            width: 247px;
+            line-height: 28px;
+            color: $lightbluegrey;
+            border: none;
+            font : {
+                family: $kumbh;
+                size: 16px;
+            }
+            &:focus {
+                outline: none;
+            }
         }
-        &[type="submit"] {
-            @extend %get-started;
-            width: 100%;
-            height: initial;
+        .error-mark {
+            width: 20px;
+            height: 20px;
+            visibility: hidden;
         }
-        &:focus {
-            outline: none;
-        }
+
     }
-    #company-input {
-        margin-bottom: 40px;
+
+    #form-submit {
+        @extend %get-started;
+        width: 100%;
+        height: initial;
+        margin-top: 40px;
     }
     #plan-select {
             border-bottom: solid 1px $lightbluegrey;
@@ -47,12 +54,14 @@ form {
         #plan-selection {
             @extend %plans;
         }
-        img {
+        #form-drop-button {
             width: 13px;
             height: 8px;
         }
     }
     #plans {
+        animation: slide-down .3s;
+        overflow: hidden;
         position: absolute;
         margin-top: 8px;
         background-color: white;
@@ -64,15 +73,28 @@ form {
         padding: 8px 16px 0;
         .plan-option {
             @extend %plans;
-            padding: 0 0 16px;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
             border-bottom: solid 1px $lightbluegrey;
             line-height: 28px;
             &:last-child {
-                padding: 0 0 8px;
                 border: none;
+            }
+            .checkmark {
+                width: 15px;
+                height: 12px;
+                padding-right:5px;
+                visibility: hidden;
             }
             &:hover {
                 cursor: pointer;
+            }
+        }
+        .selected {
+            .checkmark {
+                visibility: visible;
             }
         }
     }
@@ -120,9 +142,10 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
-    form {
+    #signup-form {
         padding: 42px;
         width: 360px;
+        height: 198px;
         input {
             width: 327px;
             height: 45px;
@@ -143,7 +166,7 @@ form {
 }
 
 @media only screen and (min-width: 1200px) {
-    form {
+    #signup-form {
         position: unset;
         height: 508px;
         margin-top: 237px;

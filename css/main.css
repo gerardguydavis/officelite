@@ -12,7 +12,7 @@
   flex-flow: row wrap;
 }
 
-form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text button {
+#signup-form #form-submit, .countdown-wrap button, .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -25,18 +25,18 @@ form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text but
   font-weight: 600;
   font-size: 16px;
 }
-form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
+#signup-form #form-submit:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
   background-color: #829Cff;
   transition: 0.1s;
   cursor: pointer;
 }
 
-form #plans .plan-option, form #plan-select #plan-selection {
+#signup-form #plans .plan-option, #signup-form #plan-select #plan-selection {
   color: #333950;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
-form #plans .plan-option span, form #plan-select #plan-selection span {
+#signup-form #plans .plan-option span, #signup-form #plan-select #plan-selection span {
   opacity: 40%;
 }
 
@@ -54,6 +54,14 @@ form #plans .plan-option span, form #plan-select #plan-selection span {
   transition: 0.2s;
 }
 
+@keyframes slide-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: 198px;
+  }
+}
 .subscription .sub-price, .hero .hero-wrap .hero-text h1 {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
@@ -68,7 +76,7 @@ form #plans .plan-option span, form #plan-select #plan-selection span {
   flex-flow: row wrap;
 }
 
-form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text button {
+#signup-form #form-submit, .countdown-wrap button, .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -81,18 +89,18 @@ form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text but
   font-weight: 600;
   font-size: 16px;
 }
-form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
+#signup-form #form-submit:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
   background-color: #829Cff;
   transition: 0.1s;
   cursor: pointer;
 }
 
-form #plans .plan-option, form #plan-select #plan-selection {
+#signup-form #plans .plan-option, #signup-form #plan-select #plan-selection {
   color: #333950;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
-form #plans .plan-option span, form #plan-select #plan-selection span {
+#signup-form #plans .plan-option span, #signup-form #plan-select #plan-selection span {
   opacity: 40%;
 }
 
@@ -240,7 +248,7 @@ form #plans .plan-option span, form #plan-select #plan-selection span {
   flex-flow: row wrap;
 }
 
-form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text button {
+#signup-form #form-submit, .countdown-wrap button, .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -253,18 +261,18 @@ form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text but
   font-weight: 600;
   font-size: 16px;
 }
-form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
+#signup-form #form-submit:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
   background-color: #829Cff;
   transition: 0.1s;
   cursor: pointer;
 }
 
-form #plans .plan-option, form #plan-select #plan-selection {
+#signup-form #plans .plan-option, #signup-form #plan-select #plan-selection {
   color: #333950;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
-form #plans .plan-option span, form #plan-select #plan-selection span {
+#signup-form #plans .plan-option span, #signup-form #plan-select #plan-selection span {
   opacity: 40%;
 }
 
@@ -502,7 +510,7 @@ form #plans .plan-option span, form #plan-select #plan-selection span {
   flex-flow: row wrap;
 }
 
-form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text button {
+#signup-form #form-submit, .countdown-wrap button, .hero .hero-wrap .hero-text button {
   width: 171px;
   color: #fff;
   background-color: #5175ff;
@@ -515,18 +523,18 @@ form input[type=submit], .countdown-wrap button, .hero .hero-wrap .hero-text but
   font-weight: 600;
   font-size: 16px;
 }
-form input[type=submit]:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
+#signup-form #form-submit:hover, .countdown-wrap button:hover, .hero .hero-wrap .hero-text button:hover {
   background-color: #829Cff;
   transition: 0.1s;
   cursor: pointer;
 }
 
-form #plans .plan-option, form #plan-select #plan-selection {
+#signup-form #plans .plan-option, #signup-form #plan-select #plan-selection {
   color: #333950;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
-form #plans .plan-option span, form #plan-select #plan-selection span {
+#signup-form #plans .plan-option span, #signup-form #plan-select #plan-selection span {
   opacity: 40%;
 }
 
@@ -814,7 +822,7 @@ footer {
     height: 56px;
   }
 }
-form {
+#signup-form {
   position: absolute;
   z-index: 10;
   width: 279px;
@@ -824,29 +832,36 @@ form {
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   border-radius: 13px;
 }
-form input {
-  border-top: none;
-  border-left: none;
-  border-right: none;
+#signup-form .form-line {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 16px;
   border-bottom: solid 1px #757B95;
+}
+#signup-form .form-line input {
   width: 247px;
   line-height: 28px;
   color: #757B95;
-  padding: 17px 16px;
+  border: none;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
 }
-form input[type=submit] {
-  width: 100%;
-  height: initial;
-}
-form input:focus {
+#signup-form .form-line input:focus {
   outline: none;
 }
-form #company-input {
-  margin-bottom: 40px;
+#signup-form .form-line .error-mark {
+  width: 20px;
+  height: 20px;
+  visibility: hidden;
 }
-form #plan-select {
+#signup-form #form-submit {
+  width: 100%;
+  height: initial;
+  margin-top: 40px;
+}
+#signup-form #plan-select {
   border-bottom: solid 1px #757B95;
   padding: 7px 16px;
   display: flex;
@@ -854,14 +869,16 @@ form #plan-select {
   align-items: center;
   justify-content: space-between;
 }
-form #plan-select:hover {
+#signup-form #plan-select:hover {
   cursor: pointer;
 }
-form #plan-select img {
+#signup-form #plan-select #form-drop-button {
   width: 13px;
   height: 8px;
 }
-form #plans {
+#signup-form #plans {
+  animation: slide-down 0.3s;
+  overflow: hidden;
   position: absolute;
   margin-top: 8px;
   background-color: white;
@@ -872,23 +889,34 @@ form #plans {
   width: 279px;
   padding: 8px 16px 0;
 }
-form #plans .plan-option {
-  padding: 0 0 16px;
+#signup-form #plans .plan-option {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: solid 1px #757B95;
   line-height: 28px;
 }
-form #plans .plan-option:last-child {
-  padding: 0 0 8px;
+#signup-form #plans .plan-option:last-child {
   border: none;
 }
-form #plans .plan-option:hover {
+#signup-form #plans .plan-option .checkmark {
+  width: 15px;
+  height: 12px;
+  padding-right: 5px;
+  visibility: hidden;
+}
+#signup-form #plans .plan-option:hover {
   cursor: pointer;
 }
-form .invalid input {
+#signup-form #plans .selected .checkmark {
+  visibility: visible;
+}
+#signup-form .invalid input {
   color: #F05B5B;
   border-bottom: solid 1px #F05B5B;
 }
-form select {
+#signup-form select {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -903,42 +931,43 @@ form select {
   font-size: 16px;
   font-weight: 700;
 }
-form selectoption {
+#signup-form selectoption {
   color: #333950;
 }
-form select:focus {
+#signup-form select:focus {
   outline: none;
 }
-form .select::after {
+#signup-form .select::after {
   content: url("../assets/sign-up/icon-arrow-down.svg");
   width: 13px;
   height: 8px;
 }
 
 @media only screen and (min-width: 768px) {
-  form {
+  #signup-form {
     padding: 42px;
     width: 360px;
+    height: 198px;
   }
-  form input {
+  #signup-form input {
     width: 327px;
     height: 45px;
   }
-  form #plan-select {
+  #signup-form #plan-select {
     width: 327px;
     height: 45px;
     padding: 17px 16px;
   }
-  form #plans {
+  #signup-form #plans {
     width: 360px;
     padding: 8px 32px;
   }
-  form #plans .plan-option {
+  #signup-form #plans .plan-option {
     width: 296px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  form {
+  #signup-form {
     position: unset;
     height: 508px;
     margin-top: 237px;
