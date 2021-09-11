@@ -617,7 +617,7 @@ footer {
 .info-wrap .countdown-wrap {
   margin: 0;
 }
-.info-wrap .countdown-wrap #countdown-date {
+.info-wrap .countdown-wrap #signup-date {
   color: #000;
 }
 .info-wrap .countdown-wrap #countdown-clock #days,
@@ -720,7 +720,7 @@ footer {
   margin: 0;
   padding: 0;
 }
-.countdown-wrap .countdown h3 {
+.countdown-wrap .countdown .countdown-date {
   line-height: 48px;
   letter-spacing: 5px;
   color: #fff;
@@ -731,7 +731,7 @@ footer {
   text-transform: uppercase;
   text-align: center;
 }
-.countdown-wrap .countdown h3 span {
+.countdown-wrap .countdown .countdown-date span {
   color: #5175ff;
 }
 .countdown-wrap .countdown #countdown-clock {
@@ -815,7 +815,7 @@ footer {
   .countdown-wrap .countdown #countdown-clock {
     margin-bottom: 0;
   }
-  .countdown-wrap .countdown h3 {
+  .countdown-wrap .countdown .countdown-date {
     text-align: left;
   }
   .countdown-wrap button {

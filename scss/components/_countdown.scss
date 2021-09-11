@@ -7,7 +7,7 @@
     .countdown {
         margin: 0;
         padding: 0;
-        h3 {
+        .countdown-date {
             line-height: 48px;
             letter-spacing: 5px;
             color: #fff;
@@ -109,7 +109,7 @@
             #countdown-clock {
                 margin-bottom: 0;
             }
-            h3 {
+            .countdown-date {
                 text-align: left;
             }
         }
