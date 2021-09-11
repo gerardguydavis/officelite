@@ -23,7 +23,8 @@
         <div class="hero" id="hero-signup">
           <div class="hero-wrap">
             <figure class="logo">
-              <img src="../assets/shared/logo.svg" alt="Officelite logo" />
+              <a href="https://gerarddavis.com/portfolio/officelite"><img src="../assets/shared/logo.svg"
+                  alt="Officelite logo" /></a>
             </figure>
             <div class="hero-text">
               <h1>Work smarter. Save time.</h1>
@@ -52,19 +53,21 @@
         </div>
       </div>
 
-      <form>
-        <input type="text" placeholder="Name" required>
-        <input type="text" placeholder="Email Address" required>
-        <div class="select">
-          <select name="plans" required>
-            <option value="basic">Basic Pack <span>Free</span></option>
-            <option value="pro">Pro Pack <span>$9.99</span></option>
-            <option value="ultimate">Ultimate Pack <span>$19.99</span></option>
-          </select>
+      <form id="signup-form">
+        <input type="text" placeholder="Name" id="name-input" required>
+        <input type="email" placeholder="Email Address" id="email-input" required>
+        <div id="plan-select">
+          <p id="plan-selection">Basic Pack <span>Free</span></p><img src="../assets/sign-up/icon-arrow-down.svg"
+            id="form-drop-button" class="close" />
         </div>
-        <input type="text" placeholder="Phone Number" required>
-        <input type="text" placeholder="Company">
-        <input type="submit" value="Get on the list">
+        <div id="plans" class="hide">
+          <p class="plan-option" id="basic-option" class="selected">Basic Pack <span>Free</span></p>
+          <p class="plan-option" id="pro-option">Pro Pack <span>$9.99</span></p>
+          <p class="plan-option" id="ultimate-option">Ultimate Pack <span>$19.99</span></p>
+        </div>
+        <input type="tel" placeholder="Phone Number" id="phone-input" maxlength="10" required>
+        <input type="text" placeholder="Company (Optional)" id="company-input">
+        <input type="submit" value="Get on the list" id="form-submit">
       </form>
 
     </div>
@@ -72,7 +75,8 @@
   <footer id="footer-signup">
     <div class="footer-wrap" id="footer-signup-wrap"></div>
   </footer>
-  <script src="../js/main.js"></script>
+  <script src="../js/countdown.js"></script>
+  <script src="../js/signup.js"></script>
 </body>
 
 </html>
