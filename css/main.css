@@ -851,11 +851,6 @@ footer {
 #signup-form .form-line input:focus {
   outline: none;
 }
-#signup-form .form-line .error-mark {
-  width: 20px;
-  height: 20px;
-  visibility: hidden;
-}
 #signup-form #form-submit {
   width: 100%;
   height: initial;
@@ -896,9 +891,13 @@ footer {
   align-items: center;
   border-bottom: solid 1px #757B95;
   line-height: 28px;
+  transition: 0.2s;
 }
 #signup-form #plans .plan-option:last-child {
   border: none;
+}
+#signup-form #plans .plan-option p {
+  padding-left: 10px;
 }
 #signup-form #plans .plan-option .checkmark {
   width: 15px;
@@ -908,6 +907,14 @@ footer {
 }
 #signup-form #plans .plan-option:hover {
   cursor: pointer;
+  background-color: rgba(81, 117, 255, 0.1);
+  transition: 0.2s;
+}
+#signup-form #plans .plan-option:hover:first-child {
+  border-radius: 8px 8px 0 0;
+}
+#signup-form #plans .plan-option:hover:last-child {
+  border-radius: 0px 0px 8px 8px;
 }
 #signup-form #plans .selected .checkmark {
   visibility: visible;
