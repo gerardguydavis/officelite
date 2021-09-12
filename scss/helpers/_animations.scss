@@ -7,3 +7,39 @@
         height: 198px;
     }
 }
+
+@keyframes slide-up-in {
+    from {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down-in {
+    from {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slide-right-in {
+    from {
+        transform: translateX(-60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

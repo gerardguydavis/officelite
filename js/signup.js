@@ -18,6 +18,7 @@ const ultimatePrice = document.getElementById("ultimate-price");
 const submit = document.getElementById("form-submit");
 const requiredInputs = [nameInput, emailInput, phoneInput];
 
+planSelection.innerHTML = basicPrice.innerHTML;
 
 signupForm.addEventListener('submit', validate);
 

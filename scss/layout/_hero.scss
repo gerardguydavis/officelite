@@ -27,6 +27,7 @@
             justify-content: center;
             img {
                 width: 100%;
+                animation: slide-down-in 1s;
             }
         }
 
@@ -39,16 +40,19 @@
                 color: $bluegrey;
                 line-height: 48px;
                 margin-top: 0;
+                animation: slide-right-in .5s;
             }
             p {
                 font-family: $kumbh;
                 color: $lightbluegrey;
                 line-height: 26px;
                 margin-bottom: 24px;
+                animation: slide-right-in .5s;
             }
             button {
                 @extend %get-started;
                 box-shadow: $button-shadow;
+                animation: slide-up-in .5s;
                 &:active {
                     margin-top: 15px;
                     box-shadow: $button-shadow-active;
@@ -80,12 +84,21 @@
                 width: 281px;
                 order: 3;
                 margin: 19px 0 0 0;
+                img {
+                    animation: slide-up-in 1s;
+                }
             }                
             .hero-text {
                 order: 2;
                 text-align: left;
                 margin: 0 56px 0 0;
                 width: 345px;
+                h1 {
+                    animation: slide-down-in .75s;
+                }
+                button {
+                    animation: slide-right-in .4s;
+                }
             }
         }
     }
