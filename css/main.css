@@ -3,10 +3,7 @@
   font-weight: 700;
 }
 
-.countdown-wrap .countdown #days,
-.countdown-wrap .countdown #hours,
-.countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .footer-wrap {
+.countdown-wrap .countdown #seconds, .countdown-wrap .countdown #minutes, .countdown-wrap .countdown #hours, .countdown-wrap .countdown #days, .footer-wrap {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -97,10 +94,7 @@
   font-weight: 700;
 }
 
-.countdown-wrap .countdown #days,
-.countdown-wrap .countdown #hours,
-.countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .footer-wrap {
+.countdown-wrap .countdown #seconds, .countdown-wrap .countdown #minutes, .countdown-wrap .countdown #hours, .countdown-wrap .countdown #days, .footer-wrap {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -282,10 +276,7 @@
   font-weight: 700;
 }
 
-.countdown-wrap .countdown #days,
-.countdown-wrap .countdown #hours,
-.countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .footer-wrap {
+.countdown-wrap .countdown #seconds, .countdown-wrap .countdown #minutes, .countdown-wrap .countdown #hours, .countdown-wrap .countdown #days, .footer-wrap {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -544,10 +535,7 @@
   font-weight: 700;
 }
 
-.countdown-wrap .countdown #days,
-.countdown-wrap .countdown #hours,
-.countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds, .footer-wrap {
+.countdown-wrap .countdown #seconds, .countdown-wrap .countdown #minutes, .countdown-wrap .countdown #hours, .countdown-wrap .countdown #days, .footer-wrap {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -705,6 +693,10 @@ footer {
     margin: 0;
   }
 
+  .countdown-date {
+    animation: slide-right-in 0.4s;
+  }
+
   #footer-signup-wrap {
     background-position-y: 110px;
     background-size: 1454px;
@@ -783,10 +775,8 @@ footer {
   width: 328px;
   margin: 18px 0 40px;
 }
-.countdown-wrap .countdown #days,
-.countdown-wrap .countdown #hours,
-.countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds {
+.countdown-wrap .countdown #days {
+  animation: slide-right-in 0.8s;
   width: 72px;
   height: 92px;
   font-family: "Kumbh Sans", sans-serif;
@@ -795,9 +785,78 @@ footer {
   color: #fff;
   text-align: center;
 }
-.countdown-wrap .countdown #days .count,
-.countdown-wrap .countdown #hours .count,
-.countdown-wrap .countdown #minutes .count,
+.countdown-wrap .countdown #days .count {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 10px 0 0;
+  width: 100%;
+}
+.countdown-wrap .countdown #days .unit {
+  text-transform: lowercase;
+  opacity: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.countdown-wrap .countdown #hours {
+  animation: slide-right-in 0.6s;
+  width: 72px;
+  height: 92px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #333950;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+.countdown-wrap .countdown #hours .count {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 10px 0 0;
+  width: 100%;
+}
+.countdown-wrap .countdown #hours .unit {
+  text-transform: lowercase;
+  opacity: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.countdown-wrap .countdown #minutes {
+  animation: slide-right-in 0.4s;
+  width: 72px;
+  height: 92px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #333950;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+.countdown-wrap .countdown #minutes .count {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 10px 0 0;
+  width: 100%;
+}
+.countdown-wrap .countdown #minutes .unit {
+  text-transform: lowercase;
+  opacity: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.countdown-wrap .countdown #seconds {
+  animation: slide-right-in 0.2s;
+  width: 72px;
+  height: 92px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #333950;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
 .countdown-wrap .countdown #seconds .count {
   font-size: 32px;
   font-weight: 700;
@@ -805,9 +864,6 @@ footer {
   margin: 10px 0 0;
   width: 100%;
 }
-.countdown-wrap .countdown #days .unit,
-.countdown-wrap .countdown #hours .unit,
-.countdown-wrap .countdown #minutes .unit,
 .countdown-wrap .countdown #seconds .unit {
   text-transform: lowercase;
   opacity: 50%;
@@ -824,25 +880,52 @@ footer {
     width: 448px;
     margin: 0 0 40px;
   }
-  .countdown-wrap .countdown #days,
-.countdown-wrap .countdown #hours,
-.countdown-wrap .countdown #minutes,
-.countdown-wrap .countdown #seconds {
+  .countdown-wrap .countdown #days {
     width: 100px;
     height: 128px;
     border-radius: 13px;
   }
-  .countdown-wrap .countdown #days .count,
-.countdown-wrap .countdown #hours .count,
-.countdown-wrap .countdown #minutes .count,
-.countdown-wrap .countdown #seconds .count {
+  .countdown-wrap .countdown #days .count {
     font-size: 56px;
     margin: 30px 0 0;
   }
-  .countdown-wrap .countdown #days .unit,
-.countdown-wrap .countdown #hours .unit,
-.countdown-wrap .countdown #minutes .unit,
-.countdown-wrap .countdown #seconds .unit {
+  .countdown-wrap .countdown #days .unit {
+    font-size: 16px;
+  }
+  .countdown-wrap .countdown #hours {
+    width: 100px;
+    height: 128px;
+    border-radius: 13px;
+  }
+  .countdown-wrap .countdown #hours .count {
+    font-size: 56px;
+    margin: 30px 0 0;
+  }
+  .countdown-wrap .countdown #hours .unit {
+    font-size: 16px;
+  }
+  .countdown-wrap .countdown #minutes {
+    width: 100px;
+    height: 128px;
+    border-radius: 13px;
+  }
+  .countdown-wrap .countdown #minutes .count {
+    font-size: 56px;
+    margin: 30px 0 0;
+  }
+  .countdown-wrap .countdown #minutes .unit {
+    font-size: 16px;
+  }
+  .countdown-wrap .countdown #seconds {
+    width: 100px;
+    height: 128px;
+    border-radius: 13px;
+  }
+  .countdown-wrap .countdown #seconds .count {
+    font-size: 56px;
+    margin: 30px 0 0;
+  }
+  .countdown-wrap .countdown #seconds .unit {
     font-size: 16px;
   }
 }
@@ -998,6 +1081,7 @@ footer {
   #signup-form {
     padding: 42px;
     width: 360px;
+    animation: slide-up-in 0.75s;
   }
   #signup-form input {
     width: 327px;

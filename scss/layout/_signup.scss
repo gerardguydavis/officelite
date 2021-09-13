@@ -59,7 +59,9 @@
             }
         }
     }
-    
+    .countdown-date {
+        animation: slide-right-in .4s;
+    }
     #footer-signup-wrap {
         background-position-y: 110px;
         background-size: 1454px;

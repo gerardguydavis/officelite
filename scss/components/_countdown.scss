@@ -31,38 +31,38 @@
             width: 328px;
             margin: 18px 0 40px;
         }
-        #days,
-        #hours,
-        #minutes,
-        #seconds {
-            @extend %center-flex;
-            width: 72px;
-            height: 92px;
-            font-family: $kumbh;
-            background-color: $bluegrey;
-            border-radius: 4px;
-            color: #fff;
-            text-align: center;
-            .count {
-                font : {
-                    size: 32px;
-                    weight: 700;
+        @each $el, $speed in $clock-divs {
+            ##{$el} {
+                @extend %center-flex;
+                animation: slide-right-in $speed;
+                width: 72px;
+                height: 92px;
+                font-family: $kumbh;
+                background-color: $bluegrey;
+                border-radius: 4px;
+                color: #fff;
+                text-align: center;
+                .count {
+                    font : {
+                        size: 32px;
+                        weight: 700;
+                    }
+                    line-height: 48px;
+                    margin: 10px 0 0;
+                    width: 100%;
                 }
-                line-height: 48px;
-                margin: 10px 0 0;
-                width: 100%;
-            }
-            .unit {
-                text-transform: lowercase;
-                opacity: 50%;
-                font : {
-                    size: 12px;
-                    weight: 700;
+                .unit {
+                    text-transform: lowercase;
+                    opacity: 50%;
+                    font : {
+                        size: 12px;
+                        weight: 700;
+                    }
+                    margin: 0 0 10px;
+                    }
                 }
-                margin: 0 0 10px;
             }
         }
-    }
     button {
         @extend %get-started;
     }
@@ -80,10 +80,8 @@
                 margin: 0 0 40px;
             }
 
-            #days,
-            #hours,
-            #minutes,
-            #seconds {
+        @each $el, $speed in $clock-divs {
+            ##{$el}  {
                 width: 100px;
                 height: 128px;
                 border-radius: 13px;
@@ -93,12 +91,12 @@
                 }
                 .unit {
                     font-size: 16px;
+                    }
                 }
             }
         }
     }
 }
-
 @media only screen and (min-width: 1200px) {
     .countdown-wrap {
         width: 1100px;
